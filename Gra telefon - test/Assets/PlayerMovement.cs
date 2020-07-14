@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
             playerTransform.position = new Vector2(xMove, playerTransform.position.y);
         }
 
-        if (Input.GetKeyDown("right") && currentIndexMove < 2)
+        if (Input.GetKeyDown("right") && xMove < 2)
         {
             xMove += 2;
             playerTransform.position = new Vector2(xMove, playerTransform.position.y);
