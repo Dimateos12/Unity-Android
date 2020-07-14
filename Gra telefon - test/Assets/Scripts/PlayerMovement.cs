@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour
 {
     private Transform playerTransform;
 
-    private int currentIndexMove = 1;
     private int xMove = 0;
 
     void Start()
@@ -23,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
             playerTransform.position = new Vector2(xMove, playerTransform.position.y);
         }
 
-        if (Input.GetKeyDown("right") && currentIndexMove < 2)
+        if (Input.GetKeyDown("right") && xMove < 2)
         {
             xMove += 2;
             playerTransform.position = new Vector2(xMove, playerTransform.position.y);
